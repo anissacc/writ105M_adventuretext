@@ -14,13 +14,15 @@ pygame.init()
 pygame.font.init()
 screenHeight = 650
 screenWidth = 1000
-
+# guiManager = pygame_gui.UIManager((screenWidth, screenHeight))
 screen = pygame.display.set_mode((screenWidth, screenHeight), 0)
 theFont = pygame.font.SysFont('Arial', 30)
 
 def leaveTheGame():
     pygame.quit()
     sys.exit()
+
+
 
 def firstScene():
     firstSceneBg = pygame.image.load('bedroom.png')
