@@ -5,7 +5,6 @@ import pygame
 # import pygame_gui
 # import pygame_textinput
 from buttonBabe import Button
-from scenes import firstScene
 
 # from pygame_gui.ui_manager import UIManager
 # from pygame_gui.elements.ui_text_box import UITextBox
@@ -43,8 +42,6 @@ def main_menu():
                 leaveTheGame()
             if event.type == pygame.MOUSEBUTTONDOWN:
                 mousePosMain = pygame.mouse.get_pos()
-                if newGameButt.checkInput(mousePosMain):
-                    firstScene()
                 if quitButt.checkInput(mousePosMain):
                     leaveTheGame()
 
