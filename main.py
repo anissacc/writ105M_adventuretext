@@ -6,6 +6,12 @@ import pygame
 # import pygame_textinput
 from buttonBabe import Button
 
+# SURVIVE AN IV PARTY, YOU HAVE RAPIDLY DRAINING ENERGY AND YOU HAVE TO HAVE THE BEST NIGHT THAT YOU CAN HAVE
+# DIFFERENT CHARACTERS HAVE DIFFERENT PERKS
+# # ONE CHARACTER IS FASTER BUT TAKES MORE ENERGY
+# # ONE CHARACTER HAS LESS ENERGY BUT GETS MORE POINTS PER ACTIVITY
+# # ETC.
+
 # from pygame_gui.ui_manager import UIManager
 # from pygame_gui.elements.ui_text_box import UITextBox
 
