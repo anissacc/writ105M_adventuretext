@@ -1,6 +1,6 @@
 import os
 import sys
-# testing if git pull request works
+
 import pygame
 # import pygame_gui
 # import pygame_textinput
@@ -18,17 +18,17 @@ screenWidth = 1000
 screen = pygame.display.set_mode((screenWidth, screenHeight), 0)
 theFont = pygame.font.SysFont('Arial', 30)
 fps = 40 # frame rate
-ani = 4 # animation cycles
+# ani = 4 # animation cycles
 
 def leaveTheGame():
     pygame.quit()
     sys.exit()
 
 def main_menu():
-    menuBG = pygame.image.load('mainMenuBG.png')
+    # menuBG = pygame.image.load('mainMenuBG.png')
     while True:
         screen.fill('black')
-        screen.blit(menuBG, (0, 0))
+        # screen.blit(menuBG, (0, 0))
 
         newGameButt = Button(390, 445, 150, 50, 'New Game', '#a8e61d', '#afe06e', '#89a823')
         continueButt = Button(145, 445, 150, 50, 'Continue', '#a8e61d', '#afe06e', '#89a823')
