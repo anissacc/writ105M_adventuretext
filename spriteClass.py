@@ -2,16 +2,15 @@ import pygame
 import sys
 
 pygame.init()
-fps = 60
-fpsClock = pygame.time.Clock()
-width = 600
-height = 600
+width = 1000
+height = 650
 screen = pygame.display.set_mode((width, height))
 font = pygame.font.SysFont('Arial', 30)
-objects = []
 
-class Character:
-    # creating a playable character
-
-    def __init__(self):
+class Slime(pygame.sprite.Sprite):
+    def __init__(self, picture):
         pygame.sprite.Sprite.__init__(self)
+        self.picture = picture
+        self.screen = pygame.display.get_surface()
+        self.area = screen.get_rect()
+

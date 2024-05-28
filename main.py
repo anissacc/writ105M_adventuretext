@@ -18,6 +18,8 @@ screenWidth = 1000
 # guiManager = pygame_gui.UIManager((screenWidth, screenHeight))
 screen = pygame.display.set_mode((screenWidth, screenHeight), 0)
 theFont = pygame.font.SysFont('Arial', 30)
+fps = 40 # frame rate
+ani = 4 # animation cycles
 
 def leaveTheGame():
     pygame.quit()
