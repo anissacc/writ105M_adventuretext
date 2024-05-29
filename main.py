@@ -5,6 +5,8 @@ import pygame
 # import pygame_gui
 # import pygame_textinput
 from buttonBabe import Button
+from spriteClass import chara
+import gameFile
 
 # SURVIVE AN IV PARTY, YOU HAVE RAPIDLY DRAINING ENERGY AND YOU HAVE TO HAVE THE BEST NIGHT THAT YOU CAN HAVE
 # DIFFERENT CHARACTERS HAVE DIFFERENT PERKS
