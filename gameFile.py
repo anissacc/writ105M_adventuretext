@@ -3,7 +3,7 @@ import sys
 
 import pygame
 import pygame_gui
-from pygame_gui.ui_manager import UIManager
+# from pygame_gui.ui_manager import UIManager
 from pygame_gui.elements.ui_text_box import UITextBox
 
 from buttonBabe import Button
@@ -29,15 +29,16 @@ def writeText(message, x, y, color = (255, 255, 255)):
 def partyScene():
     # playerImage = 'slimeWalk1.png'
     # player = chara(playerImage)
-    while True:
-        gameScreen.fill('black')
-        UITextBox('<font size=30>Directions:<br>'
+    UITextBox('<font size=30>Directions:<br>'
                   'You\'re a UCSB student and a NERD'
                   '\nFix that by partying as HARD AS YOU CAN!', 
                   pygame.Rect(10, 10, 800, 350),
                   manager = guiManager, object_id='#text_box_1')
-        
-        
+    
+    gameClock = pygame.time.Clock()
+
+    while True:
+        gameScreen.fill('black')
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -45,7 +46,8 @@ def partyScene():
 
             guiManager.process_events(event)
         
-        guiManager.update()
+        guiManager.update(gameClock.tick(60) / 1000.0)
+        guiManager.draw_ui(gameScreen)
         
         # player.update()
         pygame.display.update()
