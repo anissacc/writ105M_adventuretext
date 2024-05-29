@@ -1,3 +1,4 @@
+'''
 import os
 import sys
 
@@ -48,3 +49,4 @@ def partyScene():
         
         # player.update()
         pygame.display.update()
+'''
